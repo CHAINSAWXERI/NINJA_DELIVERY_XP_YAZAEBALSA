@@ -145,4 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 20
+  _Bullet_one: {fileID: 858843116632027999}
   rb: {fileID: 4169490867868642796}
+  timeLeft: 0
+  timeEnd: 0.5

@@ -11,7 +11,7 @@ public class PLR_MOVE : MonoBehaviour
     public bool isGround;
     public LayerMask WhatIsGround;
 
-    
+
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
@@ -31,7 +31,22 @@ public class PLR_MOVE : MonoBehaviour
                 body.velocity = new Vector2(body.velocity.x, jumpForce);
             }
         }
+
+        
     }
 }
 
-//new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
+/*
+    public bool isTeleport;
+    public LayerMask WhatIsTeleport;
+    [SerializeField] private GameObject EndPointTP;
+ 
+    isTeleport = Physics2D.IsTouchingLayers(myCollider, WhatIsTeleport);
+        if (isTeleport)
+        {
+            Player.transform.position = EndPointTP.transform.position;
+        }
+ 
+ 
+ 
+ */

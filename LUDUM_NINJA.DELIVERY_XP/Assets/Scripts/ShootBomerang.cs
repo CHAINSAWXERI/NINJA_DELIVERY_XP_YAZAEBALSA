@@ -6,6 +6,7 @@ public class ShootBomerang : MonoBehaviour
 {
     public Transform _firePoint;
     public GameObject _bulletp;
+    public GameObject _Bullet_one;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
@@ -17,7 +18,6 @@ public class ShootBomerang : MonoBehaviour
     void Shoot()
     {
         //shooting logic
-        GameObject _Bullet_one = Instantiate(_bulletp, _firePoint.position, _firePoint.rotation);
-        Destroy(_Bullet_one, 1);
+        _Bullet_one = Instantiate(_bulletp, _firePoint.position, _firePoint.rotation);
     }
 }
