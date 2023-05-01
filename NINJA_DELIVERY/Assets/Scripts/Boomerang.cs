@@ -6,6 +6,7 @@ public class Boomerang : MonoBehaviour
 {
     public float _speed = 20f;
     public GameObject _Bullet_one;
+    public GameObject _Enemy;
     public Rigidbody2D rb;
     public float timeLeft = 0f;
     public float timeEnd = 0.5f;
@@ -28,10 +29,6 @@ public class Boomerang : MonoBehaviour
         if (collision.tag == "Player")
         {
             Destroy(_Bullet_one, 0);
-        }
-        if (collision.tag == "Enemy")
-        {
-            Debug.Log("Дальше сами пишите");
         }
     }
 }
