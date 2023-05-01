@@ -25,12 +25,13 @@ public class Muvment : MonoBehaviour
         void FixedUpdate()
         {
             MoveX();
-            GrounCheck();
+            
         }
 
         void Update()
         {
             ChangeVector();
+            GrounCheck();
             Jump();
         }
         
